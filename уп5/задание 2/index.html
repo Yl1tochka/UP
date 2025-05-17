@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Какой-то Алмаз</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="flex justify-center items-center min-h-screen bg-gray-100 p-4">
+      <div class="bg-white shadow-lg rounded-lg">
+        <div class="flex border-b border-gray-300">
+          <button
+            class="tab-btn bg-blue-500 text-white p-4 rounded-t hover:bg-blue-600 focus:outline-none"
+            onclick="showTab(0)"
+          >
+            Tab 1
+          </button>
+          <button
+            class="tab-btn bg-gray-200 text-gray-800 p-4 rounded-t hover:bg-blue-600 focus:outline-none"
+            onclick="showTab(1)"
+          >
+            Tab 2
+          </button>
+          <button
+            class="tab-btn bg-gray-200 text-gray-800 p-4 rounded-t hover:bg-blue-600 focus:outline-none"
+            onclick="showTab(2)"
+          >
+            Tab 3
+          </button>
+        </div>
+        <div class="p-4" id="tab-content-0">
+          <p>Первая чень интересная информация</p>
+          <img
+            src="https://placehold.co/600x400?text=Первая фотка"
+            alt="Tab 1 Image"
+            class="mt-4 rounded shadow-lg"
+          />
+        </div>
+        <div class="p-4 hidden" id="tab-content-1">
+          <p>Вторая очень интересная информация</p>
+          <img
+            src="https://placehold.co/600x400?text=Вторая фотка"
+            alt="Tab 2 Image"
+            class="mt-4 rounded shadow-lg"
+          />
+        </div>
+        <div class="p-4 hidden" id="tab-content-2">
+          <p>Третья очень интересная информация</p>
+          <img
+            src="https://placehold.co/600x400?text=Третья фотка"
+            alt="Tab 3 Image"
+            class="mt-4 rounded shadow-lg"
+          />
+        </div>
+      </div>
+    </div>
+    <script>
+      function showTab(index) {
+        const contents = document.querySelectorAll('[id^="tab-content-"]');
+        const buttons = document.querySelectorAll('.tab-btn');
+        contents.forEach((content, i) => {
+          content.classList.toggle('hidden', i !== index);
+        });
+        buttons.forEach((btn, i) => {
+          if (i === index) {
+            btn.classList.remove('bg-gray-200', 'text-gray-800');
+            btn.classList.add('bg-blue-500', 'text-white');
+          } else {
+            btn.classList.remove('bg-blue-500', 'text-white');
+            btn.classList.add('bg-gray-200', 'text-gray-800');
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
