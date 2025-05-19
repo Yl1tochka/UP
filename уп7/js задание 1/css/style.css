@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Mulish";
+  overflow: hidden;
+  margin: 0;
+  background: #111;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+.sl1{
+  background: url(https://news.store.rambler.ru/img/fdbb523b60026182db387c82e171f95b?img-1-resize=width%3A1280%2Cheight%3A1280%2Cfit%3Acover&img-format=auto);
+}
+.sl2{
+  background: url(https://avatars.mds.yandex.net/i?id=309813733ddf78fa52c6852ec06bac3f_l-11008180-images-thumbs&n=13);
+}
+.sl3{
+  background: url(https://avatars.mds.yandex.net/i?id=631332364f2d8eb6e0e070c05e94fbec_l-5232959-images-thumbs&n=13);
+}
+.sl4{
+  background: url(https://avatars.mds.yandex.net/i?id=326c90014f4700975598557978c374d0_l-3757598-images-thumbs&n=13);
+}
+.sl5{
+  background: url(https://i.pinimg.com/originals/62/0c/00/620c004798417f37a519ee34207122c6.jpg);
+}
