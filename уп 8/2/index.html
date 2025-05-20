@@ -3,9 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Фархутдинов</title>
+    <title>Shumkova</title>
     <script defer src="./script.js"></script>
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -13,15 +21,74 @@
       <div class="container">
         <div class="form-box login">
           <form action="">
-            <h1>Login</h1>
+            <h1>Вход</h1>
             <div class="input-box">
-              <input type="text" part="Введите кличку" required>
+              <input type="text" placeholder="Введите кличку" required />
+              <ion-icon name="person"></ion-icon>
             </div>
             <div class="input-box">
-              <input type="password" part="Введите пароль" required>
-              <i class="fa fa-lock" aria-hidden="true"></i>
+              <input type="password" placeholder="Введите пароль" required />
+              <ion-icon name="key"></ion-icon>
+            </div>
+            <div class="forgot-link">
+              <a href="#">Вспомнить пароль</a>
+            </div>
+            <button type="submit" class="btn">Войти</button>
+            <p>или зайдите другим методом</p>
+            <div class="social-icons">
+              <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-facebook"></ion-icon> </a>
+              <a href="#"><ion-icon name="logo-github"></ion-icon> </a>
+              <a href="#"><ion-icon name="logo-linkedin"></ion-icon></ion-icon></a>
             </div>
           </form>
+        </div>
+        <div class="form-box register">
+          <form action="">
+            <h1>Регистрация</h1>
+
+
+
+            <div class="input-box">
+              <input type="text" placeholder="Введите кличку" required />
+              <ion-icon name="person"></ion-icon>
+            </div>
+
+            <div class="input-box">
+              <input type="email" placeholder="Введите mail " required />
+              <ion-icon name="mail"></ion-icon>
+              
+            </div>
+
+
+            <div class="input-box">
+              <input type="password" placeholder="Введите пароль" required />
+              <ion-icon name="key"></ion-icon>
+            </div>
+
+            <button type="submit" class="btn">Зарегистрироваться</button>
+            <p>или зайдите другим методом</p>
+            <div class="social-icons">
+              <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-facebook"></ion-icon> </a>
+              <a href="#"><ion-icon name="logo-github"></ion-icon> </a>
+              <a href="#"><ion-icon name="logo-linkedin"></ion-icon></ion-icon></a>
+            </div>
+          </form>
+        </div>
+        <div class="toggle-box">
+          <div class="toggle-panel toggle-left">
+            <h1>Добро пожаловать!</h1>
+            <p>Нет аккаунта?</p>
+            <button class="btn register-btn">Зарегаться</button>
+
+          </div>
+          <div class="toggle-panel toggle-right">
+            <h1>Добро пожаловать!</h1>
+            <p>Нет аккаунта?</p>
+            <button class="btn login-btn">Войти</button>
+
+          </div>
         </div>
       </div>
     </section>

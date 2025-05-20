@@ -1,5 +1,5 @@
-let root = document.querySelector(":root");
-let button = document.querySelector("#themeToggle");
+const root = document.querySelector(":root");
+const button = document.querySelector("#themeToggle");
 
 button.addEventListener('click', () => {
   event.preventDefault();
@@ -10,3 +10,5 @@ button.addEventListener('click', () => {
     themeToggle.textContent = "Перейти на темную сторону"
   }
 });
+
+
