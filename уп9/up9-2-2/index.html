@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Расчет стоимости клининга моей</title>
+<script defer src="./js/script.js"></script>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="container" role="main" aria-label="Калькулятор стоимости клининга Loan">
+    <h1>Расчет стоимости клининга Loan</h1>
+    <form id="cleaningForm" aria-describedby="footnote">
+      <label for="area">Площадь (м²):</label>
+      <input type="number" id="area" name="area" min="1" step="0.1" required aria-required="true" aria-label="Введите площадь в квадратных метрах" placeholder="Например, 50" />
+
+      <label for="cleaningType">Тип клининга:</label>
+      <select id="cleaningType" name="cleaningType" required aria-required="true" aria-label="Выберите тип клининга">
+        <option value="" disabled selected>Выберите...</option>
+        <option value="standard">Стандартная уборка</option>
+        <option value="deep">Глубокая уборка</option>
+        <option value="postconstruction">После ремонта</option>
+        <option value="office">Уборка офиса</option>
+      </select>
+
+      <label for="urgency">Срочность выполнения:</label>
+      <select id="urgency" name="urgency" required aria-required="true" aria-label="Выберите срочность уборки">
+        <option value="" disabled selected>Выберите...</option>
+        <option value="standard">Стандарт (3 дня)</option>
+        <option value="express">Экспресс (1 день +20%)</option>
+      </select>
+
+      <button type="submit" aria-label="Рассчитать стоимость клининга">Рассчитать</button>
+    </form>
+
+    <div class="result" id="result" role="region" aria-live="polite" aria-atomic="true"></div>
+    <div class="footnote" id="footnote">
+      * Цена указана в российских рублях (₽)
+    </div>
+  </div>
+
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Калькулятор какой-то</title>
+<script defer src="./js/script.js"></script>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <main class="calculator" role="main" aria-label="Калькулятор расчёта стоимости клининга">
+    <h1>Калькулятор какой-то</h1>
+    <form id="cleaning-form" novalidate>
+      <div class="form-group">
+        <label for="area">Площадь помещения (м²)</label>
+        <input type="number" id="area" name="area" min="10" max="1000" step="1" required aria-describedby="areaHelp" placeholder="Например, 50" />
+      </div>
+      <div class="form-group">
+        <label for="cleaning-type">Тип клининга</label>
+        <select id="cleaning-type" name="cleaning-type" required aria-describedby="typeHelp">
+          <option value="" disabled selected>Выберите тип</option>
+          <option value="regular">Регулярная уборка</option>
+          <option value="general">Генеральная уборка</option>
+          <option value="afterRepair">Уборка после ремонта</option>
+          <option value="office">Уборка офиса</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Дополнительные услуги</label>
+        <div class="checkbox-group" role="group" aria-label="Дополнительные услуги">
+          <label><input type="checkbox" name="services" value="windows" /> Мытьё окон</label>
+          <label><input type="checkbox" name="services" value="balcony" /> Уборка балкона</label>
+          <label><input type="checkbox" name="services" value="fridge" /> Чистка холодильника</label>
+          <label><input type="checkbox" name="services" value="oven" /> Чистка духовки</label>
+          <label><input type="checkbox" name="services" value="carpet" /> Чистка ковров</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="urgency">Срочность выполнения</label>
+        <select id="urgency" name="urgency" required aria-describedby="urgencyHelp">
+          <option value="standard" selected>Стандартный срок (3 дня)</option>
+          <option value="express">Экспресс (1 день, +30%)</option>
+          <option value="sameDay">В тот же день (+50%)</option>
+        </select>
+      </div>
+      <button type="submit" aria-label="Рассчитать стоимость клининга">Рассчитать</button>
+    </form>
+    <div class="result" role="region" aria-live="polite" aria-atomic="true" id="result" tabindex="0"></div>
+    <div class="footer">© 2024 Клининговые услуги</div>
+  </main>
+
+
+</body>
+</html>

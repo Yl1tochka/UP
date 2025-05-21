@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Наша Корзина</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Навигация -->
+  <nav class="navbar">
+    <div class="logo">Магазин Электросамокатов</div>
+    <ul class="nav-links">
+      <li><a href="./index.html">Главная</a></li>
+      <li><a href="#">Корзина</a></li>
+    </ul>
+  </nav>
+
+  <!-- Заголовок корзины -->
+  <header class="cart-header">
+    <h1>МОЯ КОРЗИНА</h1>
+    <p>2 товара</p>
+  </header>
+
+  <!-- Список товаров в корзине -->
+  <section class="cart-items">
+    <table>
+      <thead>
+        <tr>
+          <th>Товар</th>
+          <th>Количество</th>
+          <th>Сумма</th>
+          <th>Удалить все</th>
+        </tr>
+      </thead>
+      <tbody id="cart-items-list">
+        <!-- Товары будут динамически добавлены через JavaScript -->
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Общая стоимость -->
+  <aside class="cart-summary">
+    <h3>Итого</h3>
+    <p>58 800 ₽</p>
+    <hr>
+    <p>Стоимость товаров: 58 800 ₽</p>
+    <p>Сумма скидки: -8 000 ₽</p>
+    <p>Итого без учета доставки: 50 800 ₽</p>
+    <button class="checkout-btn">Оформить заказ</button>
+    <p class="terms">
+      Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и политику конфиденциальности
+    </p>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
